@@ -1,0 +1,28 @@
+---
+#Configuracion del Servidor
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+#Configuracion del log
+logging:
+  level:
+    root: INFO
+    web: DEBUG
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql:
+              BasicBinder: TRACE
+  pattern:
+    dateformat: HH:mm:ss
+
+#Suprimir el banner de Spring
+spring:
+  main:
+    banner-mode: off
+...
+
+
